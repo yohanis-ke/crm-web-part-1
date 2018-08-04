@@ -1,0 +1,9 @@
+
+
+<h1> List of contacts</h1>
+
+<a href="/home"> Home </a>
+
+<% @contact.each do |list| %>
+<li> <%="#{list.id }.."%> <%= "#{list.first_name}.." %> <%="#{list.last_name}.." %> <%="#{list.email}.." %> <%="#{list.note }"%></li>
+<% end %>
